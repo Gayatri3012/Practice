@@ -64,7 +64,7 @@ nav {
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-a {
+#navigation a {
     color: azure;
     font-size: larger;
     font-weight: 300;
@@ -74,9 +74,11 @@ a {
 
 #book-table {
     padding: 3px;
+    text-decoration: none;
     background-color: gray;
     border: 2px solid white;
     border-radius: 4px;
+    color: white;
 }
 
 .about-us {
@@ -93,6 +95,7 @@ a {
 
 .about-us p {
     font-weight: 400;
+    font-size: large;
 }
 
 .menu {
@@ -118,6 +121,11 @@ a {
     font-size: x-large;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.menu p {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menu header {
@@ -160,12 +168,128 @@ a {
     grid-area: dessert;
 }
 
-footer {
+#reservation {
+    text-align: center;
+    padding: 50px;
+}
 
-    background: rgba(30, 48, 39, 0.623);
-    border-top: 2px solid rgb(255, 255, 255);
-    padding: 16px;
-    color: azure;
+#reservation header {
+    font-size: x-large;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#reservation-content h3 {
     font-size: larger;
-    font-weight: 300;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#reservation-content p {
+    font-weight: 400;
+    font-size: large;
+}
+
+#reservation-content {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+#contact-us {
+    background-image: url('images/contactUs.jpg');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#contact-us header,
+#contact-text,
+#contact-details {
+    background-color: rgba(37, 27, 9, 0.432);
+}
+
+#contact-us header,
+#contact-text {
+    text-align: center;
+    font-size: x-large;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#contact-us header {
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#contact-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact-details {
+    display: grid;
+    font-size: large;
+    grid-template: auto;
+    justify-content: space-evenly;
+    grid-template-areas: "location phone email"
+        "social-media-links social-media-links social-media-links"
+        "opening-hours opening-hours opening-hours";
+
+}
+
+#contact-details h3 {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+#location {
+    grid-area: location;
+    text-align: center;
+}
+
+#phone {
+    grid-area: phone;
+    text-align: center;
+}
+
+#email {
+    grid-area: email;
+    text-align: center;
+}
+
+#email a {
+    color: white;
+    text-decoration: none;
+}
+
+#social-media-links {
+
+    grid-area: social-media-links;
+    text-align: center;
+}
+
+#opening-hours {
+    padding-top: 20px;
+    grid-area: opening-hours;
+    text-align: center;
+}
+
+#social-media-links img {
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
